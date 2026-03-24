@@ -1,0 +1,15 @@
+export interface Character {
+    currentHealth: number;
+    MaxHealth: number;
+    attack: number;
+    defense?: number;
+}
+export interface PlayerCharacter extends Character {
+    name: string ;
+    level: number;
+    experience: number;
+}
+export interface EnemyCharacter extends Character {
+    type: string;
+    loot: string[];
+}
